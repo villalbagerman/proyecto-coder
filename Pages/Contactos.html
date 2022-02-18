@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Contactanos</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Inicio</a></li>
+          <li><a href="/Pages/Productos.html">Productos</a></li>
+          <li><a href="/Pages/Ofertas.html">Ofertas</a></li>
+          <li><a href="/Pages/Contactos.html">Contactos</a></li>
+          <li><a href="/Pages/Nosotros.html">Nosotros</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--Aca comienza la realizacion del formulario-->
+    <h1>Formulario</h1>
+    <form action="">
+      <fieldset>
+        <legend>Mi Formulario</legend>
+
+        <label for="nombre">Nombre</label>
+        <input
+          type="text"
+          name="nombre"
+          placeholder="Escriba su nombre"
+          id="nombre"
+        />
+        <br />
+
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" id="apellido" />
+
+        <div>Acepta los terminos y condiciones?</div>
+        <input type="checkbox" name="acepta" value="1" />
+        <br />
+        <label for="">Elejir talles</label>
+        <select name="talles" id="talles">
+          <option value="XL">Extra Large</option>
+          <option value="L">Large</option>
+          <option value="M">Medium</option>
+          <option value="S">Small</option>
+        </select>
+        <br />
+
+        <label for="Mensaje">Mensaje</label>
+        <br />
+        <textarea name="Mensaje" id="Mensaje" cols="30" rows="10"></textarea>
+        <br />
+        <input type="submit" value="Enviar Formulario" />
+        <input type="reset" value="Borrar Formulario" />
+      </fieldset>
+    </form>
+  </body>
+</html>

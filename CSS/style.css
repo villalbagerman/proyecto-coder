@@ -1,0 +1,295 @@
+html {
+  font-size: 62, 5;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: lightblue;
+  background-image: linear-gradient(to right, blue, lightblue);
+  top: 0%;
+  height: 6rem;
+  border: black solid;
+}
+
+.contenedorNavegacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 4rem;
+  height: auto;
+  margin: 1rem;
+  animation: efecto_logo 2s ease;
+}
+
+/* ANIMACION DEL LOGO */
+
+@keyframes efecto_logo {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+ul li {
+  color: darkgreen;
+  display: inline-block;
+  list-style: none;
+}
+
+ul li a {
+  color: black;
+  text-decoration: none;
+  padding: 15px;
+}
+
+ul li a:hover {
+  color: white;
+}
+
+/* Aca empieza el BODY PAGINA INICIAL */
+
+body {
+  background-color: lightgray;
+  top: 0%;
+  height: 100rem;
+  min-width: 100vh;
+}
+
+.tituloPagina {
+  text-align: center;
+  font-family: montserrat, sans-serif;
+  animation: efecto_titulo 1.5s ease;
+}
+
+/* ANIMACION TITULO */
+
+@keyframes efecto_titulo {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.primerParrafo {
+  font-family: montserrat, sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  margin: 1rem;
+}
+
+.contenedorBody {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.contenedorBody img {
+  width: 38rem;
+  margin: 2rem;
+}
+
+/* realizacion del FOOTER PAGINA INICIAL */
+
+footer {
+  top: 0%;
+  height: 30rem;
+}
+
+.contenedorFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.img-redes {
+  width: 5rem;
+  margin: 10rem;
+}
+
+.copyright {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* pagina PRODUCTOS */
+
+.nombrePagina {
+  text-align: center;
+  font-family: montserrat, sans-serif;
+}
+
+.ropaAdidas {
+  padding-bottom: 3rem;
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(5);
+  grid-auto-rows: 355px;
+  grid-template-areas:
+    "img1  img2   img3  img4 img5"
+    "img1  img6   img7  img8 img9"
+    "img1  img10  img11 img12 img13"
+    "img1  img14  img15 img16 img17";
+
+  gap: 10px;
+  position: relative;
+}
+
+.propaganda {
+  width: 600px;
+  height: 1978px;
+}
+
+.remeraAdidas {
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+.buzoAdidas {
+  width: 300px;
+  height: 300px;
+}
+
+.camperaAdidas {
+  width: 300px;
+  height: 300px;
+}
+
+.zapatillaAdidas {
+  width: 300px;
+  height: 300px;
+}
+
+.remeraNike {
+  width: 300px;
+  height: 300px;
+  grid-area: img6;
+}
+
+.buzoNike {
+  width: 300px;
+  height: 300px;
+  grid-area: img7;
+}
+
+.mediasNike {
+  width: 300px;
+  height: 300px;
+  grid-area: img8;
+}
+
+.zapatillaNike {
+  width: 300px;
+  height: 300px;
+  grid-area: img9;
+}
+
+.remeraPuma {
+  width: 300px;
+  height: 300px;
+  grid-area: img10;
+}
+
+.camperaPuma {
+  width: 300px;
+  height: 300px;
+  grid-area: img11;
+}
+
+.pantalonPuma {
+  width: 300px;
+  height: 300px;
+  grid-area: img12;
+}
+
+.zapatillaPuma {
+  width: 300px;
+  height: 300px;
+  grid-area: img13;
+}
+
+.remeraReebok {
+  width: 300px;
+  height: 300px;
+  grid-area: img14;
+}
+
+.camperaReebok {
+  width: 300px;
+  height: 300px;
+  grid-area: img15;
+}
+
+.pantalonReebok {
+  width: 300px;
+  height: 300px;
+  grid-area: img16;
+}
+
+.zapatillaReebok {
+  width: 300px;
+  height: 300px;
+  grid-area: img17;
+}
+
+button {
+  position: absolute;
+  width: 300px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  background-image: linear-gradient(to top, rgb(148, 143, 143), rgb(8, 8, 165));
+  transition: heigth 2s, width 1s;
+  opacity: 0;
+  transform: skewy(20deg);
+}
+
+button:hover {
+  opacity: 1;
+  height: 50px;
+  width: 300px;
+  padding: 20;
+}
+
+/* realizacion del footer PAGINA PRODUCTOS */
+
+.contenedorFooter2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.img-redes2 {
+  width: 5rem;
+  margin: 10rem;
+}
+
+.copyright2 {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
