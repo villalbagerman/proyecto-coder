@@ -16,22 +16,6 @@
   }
 }
 
-ul li {
-  color: darkgreen;
-  display: inline-block;
-  list-style: none;
-}
-
-ul li a {
-  color: black;
-  text-decoration: none;
-  padding: 15px;
-}
-
-ul li a:hover {
-  color: white;
-}
-
 /* Aca empieza el BODY PAGINA INICIAL */
 
 /* ANIMACION TITULO */
@@ -221,7 +205,7 @@ body {
   border: 1px solid #343759;
   border-radius: 4px;
   box-shadow: 0px 0px 4px 0px #343759;
-  padding: 60px;
+  padding: 80px;
   text-align: center;
   flex-grow: 1;
   color: #343759;
@@ -326,11 +310,6 @@ $mostrar: true;
   border: 10px double #343759;
 }
 
-.tabla--borde2 {
-  @extend .tabla;
-  border: 10px inset #343759;
-}
-
 /* MIXINS */
 @mixin sizes($font-size, $font-weight) {
   font-weight: $font-weight;
@@ -339,4 +318,25 @@ $mostrar: true;
 
 .boton {
   @include sizes(16px, 600);
+}
+
+/*pagina Nosotros */
+.historia {
+  padding: 10px;
+  text-align: center;
+  font-family: montserrat, sans-serif;
+  margin: 3rem;
+  height: auto;
+  font-size: 30px;
+}
+
+.tituloNosotros {
+  text-align: center;
+  margin: 2rem;
+  font-size: 50px;
+}
+
+.historia p {
+  margin: 2rem;
+  font-size: 30px;
 }

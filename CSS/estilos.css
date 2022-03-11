@@ -42,6 +42,25 @@ header .contenedorNavegacion .logo {
           animation: efecto_logo 2s ease;
 }
 
+header .contenedorNavegacion .listaNavegacion {
+  font-size: 1.7rem;
+}
+
+header .contenedorNavegacion .listaNavegacion li {
+  display: inline-block;
+  list-style: none;
+}
+
+header .contenedorNavegacion .listaNavegacion li a {
+  color: black;
+  text-decoration: none;
+  padding: 15px;
+}
+
+header .contenedorNavegacion .listaNavegacion li a:hover {
+  color: white;
+}
+
 body {
   background-color: lightgray;
   top: 0%;
@@ -139,22 +158,6 @@ footer .contenedorFooter .img-redes {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
   }
-}
-
-ul li {
-  color: darkgreen;
-  display: inline-block;
-  list-style: none;
-}
-
-ul li a {
-  color: black;
-  text-decoration: none;
-  padding: 15px;
-}
-
-ul li a:hover {
-  color: white;
 }
 
 /* Aca empieza el BODY PAGINA INICIAL */
@@ -379,7 +382,7 @@ body {
       flex-wrap: wrap;
 }
 
-.tabla, .tabla--borde, .tabla--borde2 {
+.tabla, .tabla--borde {
   width: 33%;
   height: 550px;
   margin: auto;
@@ -387,7 +390,7 @@ body {
   border-radius: 4px;
   -webkit-box-shadow: 0px 0px 4px 0px #343759;
           box-shadow: 0px 0px 4px 0px #343759;
-  padding: 60px;
+  padding: 80px;
   text-align: center;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -395,22 +398,22 @@ body {
   color: #343759;
 }
 
-.tabla > h2, .tabla--borde > h2, .tabla--borde2 > h2 {
+.tabla > h2, .tabla--borde > h2 {
   font-size: 30px;
   margin-bottom: 35px;
 }
 
-.tabla img, .tabla--borde img, .tabla--borde2 img {
+.tabla img, .tabla--borde img {
   width: 64px;
   margin-bottom: 35px;
 }
 
-.tabla > h3, .tabla--borde > h3, .tabla--borde2 > h3 {
+.tabla > h3, .tabla--borde > h3 {
   font-size: 30px;
   margin-bottom: 20px;
 }
 
-.tabla > p, .tabla--borde > p, .tabla--borde2 > p {
+.tabla > p, .tabla--borde > p {
   display: block;
   margin-bottom: 20px;
 }
@@ -429,7 +432,7 @@ body {
   margin: auto;
 }
 
-.tabla:hover, .tabla--borde:hover, .tabla--borde2:hover {
+.tabla:hover, .tabla--borde:hover {
   background: #414bd1;
   color: #f1f1f2;
   -webkit-transition: 0.5s all;
@@ -440,7 +443,7 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
-  .tabla, .tabla--borde, .tabla--borde2 {
+  .tabla, .tabla--borde {
     width: 45%;
     max-width: none;
     margin-bottom: 40px;
@@ -451,17 +454,17 @@ body {
 }
 
 @media screen and (max-width: 700px) {
-  .tabla, .tabla--borde, .tabla--borde2 {
+  .tabla, .tabla--borde {
     width: 45%;
     padding: 30px;
   }
-  .tabla > h2, .tabla--borde > h2, .tabla--borde2 > h2 {
+  .tabla > h2, .tabla--borde > h2 {
     margin-top: 40px;
   }
 }
 
 @media screen and (max-width: 550px) {
-  .tabla, .tabla--borde, .tabla--borde2 {
+  .tabla, .tabla--borde {
     width: 85%;
     padding: 20px;
   }
@@ -469,7 +472,7 @@ body {
 
 /* OPERACIONES EN LA PAGINA OFERTAS*/
 /* CONDICIONALES */
-.tabla, .tabla--borde, .tabla--borde2 {
+.tabla, .tabla--borde {
   border: 5px solid #343759;
 }
 
@@ -482,13 +485,30 @@ body {
   border: 10px double #343759;
 }
 
-.tabla--borde2 {
-  border: 10px inset #343759;
-}
-
 /* MIXINS */
 .boton {
   font-weight: 600;
   font-size: 16px;
+}
+
+/*pagina Nosotros */
+.historia {
+  padding: 10px;
+  text-align: center;
+  font-family: montserrat, sans-serif;
+  margin: 3rem;
+  height: auto;
+  font-size: 30px;
+}
+
+.tituloNosotros {
+  text-align: center;
+  margin: 2rem;
+  font-size: 50px;
+}
+
+.historia p {
+  margin: 2rem;
+  font-size: 30px;
 }
 /*# sourceMappingURL=estilos.css.map */
