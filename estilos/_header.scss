@@ -1,0 +1,21 @@
+header {
+  background-color: lightblue;
+  background-image: linear-gradient(to right, blue, lightblue);
+  top: 0%;
+  height: 6rem;
+  border: black solid;
+
+  .contenedorNavegacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      width: 4rem;
+      height: auto;
+      margin: 1rem;
+      animation: efecto_logo 2s ease;
+    }
+  }
+}

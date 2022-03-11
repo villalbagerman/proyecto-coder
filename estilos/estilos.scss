@@ -1,34 +1,7 @@
-html {
-  font-size: 62, 5;
-}
-
-* {
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box;
-}
-
-header {
-  background-color: lightblue;
-  background-image: linear-gradient(to right, blue, lightblue);
-  top: 0%;
-  height: 6rem;
-  border: black solid;
-}
-
-.contenedorNavegacion {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  width: 4rem;
-  height: auto;
-  margin: 1rem;
-  animation: efecto_logo 2s ease;
-}
+@import "reseteocss";
+@import "header";
+@import "body";
+@import "footerindex";
 
 /* ANIMACION DEL LOGO */
 
@@ -61,19 +34,6 @@ ul li a:hover {
 
 /* Aca empieza el BODY PAGINA INICIAL */
 
-body {
-  background-color: lightgray;
-  top: 0%;
-  height: 100rem;
-  min-width: 100vh;
-}
-
-.tituloPagina {
-  text-align: center;
-  font-family: montserrat, sans-serif;
-  animation: efecto_titulo 1.5s ease;
-}
-
 /* ANIMACION TITULO */
 
 @keyframes efecto_titulo {
@@ -87,48 +47,7 @@ body {
   }
 }
 
-.primerParrafo {
-  font-family: montserrat, sans-serif;
-  font-weight: 400;
-  line-height: 1;
-  margin: 1rem;
-}
-
-.contenedorBody {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.contenedorBody img {
-  width: 38rem;
-  margin: 2rem;
-}
-
 /* realizacion del FOOTER PAGINA INICIAL */
-
-footer {
-  top: 0%;
-  height: 30rem;
-}
-
-.contenedorFooter {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.img-redes {
-  width: 5rem;
-  margin: 10rem;
-}
-
-.copyright {
-  align-items: center;
-  display: flex;
-  justify-content: space-around;
-}
 
 /* pagina PRODUCTOS */
 
@@ -141,27 +60,21 @@ footer {
   padding-bottom: 3rem;
   padding-top: 1rem;
   display: grid;
-  grid-template-columns: repeat(5);
+  grid-template-columns: repeat(3);
   grid-auto-rows: 355px;
   grid-template-areas:
-    "img1  img2   img3  img4 img5"
-    "img1  img6   img7  img8 img9"
-    "img1  img10  img11 img12 img13"
-    "img1  img14  img15 img16 img17";
+    "img2   img3  img4 img5"
+    "img6   img7  img8 img9"
+    "img10  img11 img12 img13"
+    "img14  img15 img16 img17";
 
   gap: 10px;
   position: relative;
 }
 
-.propaganda {
-  width: 600px;
-  height: 1978px;
-}
-
 .remeraAdidas {
   width: 300px;
   height: 300px;
-  position: relative;
 }
 
 .buzoAdidas {
@@ -182,25 +95,21 @@ footer {
 .remeraNike {
   width: 300px;
   height: 300px;
-  grid-area: img6;
 }
 
 .buzoNike {
   width: 300px;
   height: 300px;
-  grid-area: img7;
 }
 
 .mediasNike {
   width: 300px;
   height: 300px;
-  grid-area: img8;
 }
 
 .zapatillaNike {
   width: 300px;
   height: 300px;
-  grid-area: img9;
 }
 
 .remeraPuma {
@@ -212,46 +121,39 @@ footer {
 .camperaPuma {
   width: 300px;
   height: 300px;
-  grid-area: img11;
 }
 
 .pantalonPuma {
   width: 300px;
   height: 300px;
-  grid-area: img12;
 }
 
 .zapatillaPuma {
   width: 300px;
   height: 300px;
-  grid-area: img13;
 }
 
 .remeraReebok {
   width: 300px;
   height: 300px;
-  grid-area: img14;
 }
 
 .camperaReebok {
   width: 300px;
   height: 300px;
-  grid-area: img15;
 }
 
 .pantalonReebok {
   width: 300px;
   height: 300px;
-  grid-area: img16;
 }
 
 .zapatillaReebok {
   width: 300px;
   height: 300px;
-  grid-area: img17;
 }
 
-button {
+.botonComprar {
   position: absolute;
   width: 300px;
   padding: 1rem;
@@ -267,7 +169,7 @@ button {
   transform: skewy(20deg);
 }
 
-button:hover {
+.botonComprar:hover {
   opacity: 1;
   height: 50px;
   width: 300px;
@@ -283,7 +185,7 @@ button:hover {
   align-items: center;
 }
 
-.img-redes2 {
+.img-redes {
   width: 5rem;
   margin: 10rem;
 }
@@ -292,4 +194,149 @@ button:hover {
   align-items: center;
   display: flex;
   justify-content: space-around;
+}
+
+/* CSS DE PAGINA OFERTAS*/
+
+body {
+  background: #dfe2df;
+  font-family: "open sans";
+}
+
+.contenedorOfertas {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tabla {
+  width: 33%;
+  height: 550px;
+  margin: auto;
+  border: 1px solid #343759;
+  border-radius: 4px;
+  box-shadow: 0px 0px 4px 0px #343759;
+  padding: 60px;
+  text-align: center;
+  flex-grow: 1;
+  color: #343759;
+}
+
+.tabla > h2 {
+  font-size: 30px;
+  margin-bottom: 35px;
+}
+
+.tabla img {
+  width: 64px;
+  margin-bottom: 35px;
+}
+
+.tabla > h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.tabla > p {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.boton {
+  display: inline-block;
+  width: 150px;
+  padding: 12px;
+  background: #a5f059;
+  text-decoration: none;
+  color: #343759;
+  border-radius: 100px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  margin: auto;
+}
+
+.tabla:hover {
+  background: #414bd1;
+  color: #f1f1f2;
+  transition: 0.5s all;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .tabla {
+    width: 45%;
+    max-width: none;
+    margin-bottom: 40px;
+    flex-grow: initial;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .tabla {
+    width: 45%;
+    padding: 30px;
+  }
+  .tabla > h2 {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .tabla {
+    width: 85%;
+    padding: 20px;
+  }
+}
+
+/* OPERACIONES EN LA PAGINA OFERTAS*/
+/* CONDICIONALES */
+
+$mostrar: true;
+.tabla {
+  @if $mostrar {
+    border: 5px solid #343759;
+  }
+}
+
+$colorBoton: redondo;
+$mostrar: true;
+
+.boton {
+  @if $colorBoton == cuadrado {
+    background: #a5f059;
+  }
+  @if $colorBoton == redondo {
+    background: #59cf2b;
+  }
+  @if $colorBoton == triangulo {
+    background: #151b18;
+  }
+}
+
+/* Extend */
+.tabla--borde {
+  @extend .tabla;
+  border: 10px double #343759;
+}
+
+.tabla--borde2 {
+  @extend .tabla;
+  border: 10px inset #343759;
+}
+
+/* MIXINS */
+@mixin sizes($font-size, $font-weight) {
+  font-weight: $font-weight;
+  font-size: $font-size;
+}
+
+.boton {
+  @include sizes(16px, 600);
 }
