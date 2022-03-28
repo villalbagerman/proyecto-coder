@@ -160,26 +160,6 @@
   padding: 20;
 }
 
-/* realizacion del footer PAGINA PRODUCTOS */
-
-.contenedorFooter2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.img-redes {
-  width: 5rem;
-  margin: 10rem;
-}
-
-.copyright2 {
-  align-items: center;
-  display: flex;
-  justify-content: space-around;
-}
-
 /* CSS DE PAGINA OFERTAS*/
 
 body {
@@ -189,15 +169,20 @@ body {
 
 .contenedorOfertas {
   width: 90%;
-  max-width: 900px;
+  max-width: 1200px;
   margin: auto;
-  height: 100vh;
+  height: 110vh;
+
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 
+.parrafoExplicacion {
+  font-size: 2.5rem;
+  padding: 1rem;
+}
 .tabla {
   width: 33%;
   height: 550px;
@@ -205,7 +190,7 @@ body {
   border: 1px solid #343759;
   border-radius: 4px;
   box-shadow: 0px 0px 4px 0px #343759;
-  padding: 80px;
+  padding: 75px;
   text-align: center;
   flex-grow: 1;
   color: #343759;
@@ -279,6 +264,11 @@ body {
   }
 }
 
+.nombrePagina2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
 /* OPERACIONES EN LA PAGINA OFERTAS*/
 /* CONDICIONALES */
 
@@ -326,7 +316,6 @@ $mostrar: true;
   text-align: center;
   font-family: montserrat, sans-serif;
   margin: 3rem;
-  height: auto;
   font-size: 30px;
 }
 
@@ -339,4 +328,8 @@ $mostrar: true;
 .historia p {
   margin: 2rem;
   font-size: 30px;
+}
+
+.contenedorNosotros {
+  height: 100%;
 }

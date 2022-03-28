@@ -25,6 +25,12 @@ body {
     img {
       width: 38rem;
       margin: 2rem;
+
+      &:hover {
+        transition: 0.5s all;
+        transform: scale(1.1);
+        cursor: pointer;
+      }
     }
   }
 }
